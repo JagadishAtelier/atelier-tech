@@ -8,7 +8,7 @@ function Navbar() {
     bg-[#ffffff4d]
     border border-[#0000001a]
     rounded-[16px]
-    w-full max-w-[810px]
+    w-full max-w-[910px]
     mx-auto
     shadow-[inset_0_4px_4px_#ffffff40]
         '>

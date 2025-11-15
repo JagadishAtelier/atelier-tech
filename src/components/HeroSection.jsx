@@ -5,7 +5,14 @@ import { Button } from './ui/button'
 
 function HeroSection() {
     return (
-        <div className='flex flex-col gap-7 mt-7'>
+        <div className='flex flex-col gap-7 mt-7 relative'>
+            <div className='hero-background-wrap'>
+                <div className='hero-blob-center'></div>
+                <div className='hero-blob-left'></div>
+                <div className='hero-blob-right'></div>
+                <img src='https://atelier-product.vercel.app/images/hero-background-shape.png' className='hero-bakground-pattern'/>
+
+            </div>
             <h1 className='text-8xl font-bold text-white text-center'>Finally, a
                 <span className='mx-3' style={{
                     backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/highlights/green_highlight_03.svg)`,
