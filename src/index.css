@@ -3,12 +3,12 @@
 
 @custom-variant dark (&:is(.dark *));
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+ font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  background-color: #e9f2f7;
+background-color: #232323;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
