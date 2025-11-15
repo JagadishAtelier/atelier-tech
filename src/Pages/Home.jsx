@@ -8,7 +8,7 @@ function Home() {
     <div>
         <HeroSection/>
         <HeroDashboard/>
-        <FlawlessSection/>
+        {/* <FlawlessSection/> */}
     </div>
   )
 }
