@@ -43,7 +43,7 @@ const leftLink = [
 
 function Footer() {
     return (
-        <footer className="bg-[#252733] mt-5">
+        <footer className="bg-[#252733] mt-6">
             {/* Logo */}
             <img
                 src="https://atelier-sdu1.vercel.app/assets/blue_logo-BZsKBbFk.svg"

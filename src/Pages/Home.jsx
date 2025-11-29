@@ -1,4 +1,5 @@
 import AppSections from '@/components/AppSections'
+import BackgroundGrid from '@/components/BackgroundGrid'
 import FeaturesSection from '@/components/FeaturesSection'
 import FlawlessSection from '@/components/FlawlessSection'
 import HeroDashboard from '@/components/HeroDashboard'
@@ -23,6 +24,7 @@ function Home() {
         <PackingSection/>
         <FeaturesSection/>
         <AppSections/>
+        <BackgroundGrid/>
         <TestiSection/>
         <OrganizedSection/>
     </div>
