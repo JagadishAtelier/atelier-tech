@@ -1,3 +1,4 @@
+import AppSections from '@/components/AppSections'
 import FeaturesSection from '@/components/FeaturesSection'
 import FlawlessSection from '@/components/FlawlessSection'
 import HeroDashboard from '@/components/HeroDashboard'
@@ -19,6 +20,7 @@ function Home() {
         <MovementsSections/>
         <PackingSection/>
         <FeaturesSection/>
+        <AppSections/>
     </div>
   )
 }
