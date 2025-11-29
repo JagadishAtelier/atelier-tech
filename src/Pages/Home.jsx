@@ -1,6 +1,7 @@
 import FlawlessSection from '@/components/FlawlessSection'
 import HeroDashboard from '@/components/HeroDashboard'
 import HeroSection from '@/components/HeroSection'
+import QualitySection from '@/components/QualitySection'
 import React from 'react'
 
 function Home() {
@@ -8,7 +9,8 @@ function Home() {
     <div>
         <HeroSection/>
         <HeroDashboard/>
-        {/* <FlawlessSection/> */}
+        <FlawlessSection/>
+        <QualitySection/>
     </div>
   )
 }

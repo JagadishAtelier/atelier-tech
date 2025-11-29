@@ -6,7 +6,7 @@ function HeroDashboard() {
 
     return (
         <div
-            className="mt-30 h-[110vh]"
+            className="mt-30 h-[110vh] relative z-50"
         //   style={{
         //     backgroundImage: `url(https://odoocdn.com/html_editor/shape/illustration/doodle/01.svg?c4=%23ffffff)`,
         //     backgroundPosition: "top center",
@@ -57,7 +57,7 @@ function HeroDashboard() {
 
                         <div className="flex gap-10 ms-auto">
                             <div className="flex gap-1">
-                                <Checkbox className="h-5 w-5" />
+                                <Checkbox className="h-5 w-5" defaultChecked />
                                 <p>Ask confirmation</p>
                             </div>
                             <p>1 day(s) before</p>
