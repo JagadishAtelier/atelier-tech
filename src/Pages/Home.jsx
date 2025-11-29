@@ -3,6 +3,7 @@ import HeroDashboard from '@/components/HeroDashboard'
 import HeroSection from '@/components/HeroSection'
 import MovementsSections from '@/components/MovementsSections'
 import OptimizeSection from '@/components/OptimizeSection'
+import PackingSection from '@/components/PackingSection'
 import QualitySection from '@/components/QualitySection'
 import React from 'react'
 
@@ -14,6 +15,8 @@ function Home() {
         <FlawlessSection/>
         <QualitySection/>
         <OptimizeSection/>
+        <MovementsSections/>
+        <PackingSection/>
         <MovementsSections/>
     </div>
   )
