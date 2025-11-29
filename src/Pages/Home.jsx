@@ -7,6 +7,7 @@ import MovementsSections from '@/components/MovementsSections'
 import OptimizeSection from '@/components/OptimizeSection'
 import PackingSection from '@/components/PackingSection'
 import QualitySection from '@/components/QualitySection'
+import TestiSection from '@/components/TestiSection'
 import React from 'react'
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
         <PackingSection/>
         <FeaturesSection/>
         <AppSections/>
+        <TestiSection/>
     </div>
   )
 }
