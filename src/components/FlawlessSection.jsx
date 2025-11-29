@@ -18,11 +18,11 @@ function FlawlessSection() {
       <p className='text-lg'><strong className='text-white'>Never run out-of-stock </strong> with smart replenishment strategies like min-max rules, MTO, or the master production schedule. Let Odoo propose, or trigger purchase orders automatically. Then automate vendor follow-ups to minimize communication risks : PO acknowledgment, receipt schedule confirmation a few days before, etc.</p>
 
 
-      <div className="flex justify-evenly items-center text-center bg-[#F3F4F6] py-4 rounded-md mt-5">
+      <div className="flex justify-evenly items-center text-center py-4 rounded-md mt-5">
 
         <div className="flex flex-col items-center h-48 justify-end">
           <img src="https://odoocdn.com/openerp_website/static/src/img/icons/blue_truck.svg" className="h-40 w-40" />
-          <h5 className="text-4xl mt-2 text-black font-semibold">Replenishment</h5>
+          <h5 className="text-4xl mt-2 text-white font-semibold">Replenishment</h5>
         </div>
 
         <div className="flex items-end">
@@ -31,7 +31,7 @@ function FlawlessSection() {
 
         <div className="flex flex-col items-center h-48 justify-end">
           <img src="https://odoocdn.com/openerp_website/static/src/img/icons/yellow_shield_2.svg" className="h-32 w-32" />
-          <h5 className="text-4xl mt-2 text-black font-semibold">Quality control</h5>
+          <h5 className="text-4xl mt-2 text-white font-semibold">Quality control</h5>
         </div>
 
         <div className="flex items-end">
@@ -40,7 +40,7 @@ function FlawlessSection() {
 
         <div className="flex flex-col items-center h-48 justify-end">
           <img src="https://odoocdn.com/openerp_website/static/src/img/icons/hand-truch.svg" className="h-32 w-32" />
-          <h5 className="text-4xl mt-2 text-black font-semibold">Storage</h5>
+          <h5 className="text-4xl mt-2 text-white font-semibold">Storage</h5>
         </div>
 
       </div>
