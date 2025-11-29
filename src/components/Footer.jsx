@@ -88,7 +88,7 @@ function Footer() {
                     <p className="text-[#ADB5BD] text-base mb-4">
                         Atelier is a suite of open source business apps that cover all your company needs: CRM, eCommerce, accounting, inventory, point of sale, project management, etc.
                     </p>
-                    <p className="text-[#ADB5BD] text-base mb-4">Odoo's unique value proposition is to be at the same time very easy to use and fully integrated.</p>
+                    <p className="text-[#ADB5BD] text-base mb-4">Atelier's unique value proposition is to be at the same time very easy to use and fully integrated.</p>
                     {/* Social Icons */}
                     <div className="flex gap-4 mt-3 text-[#ADB5BD]">
                         <a href="#">

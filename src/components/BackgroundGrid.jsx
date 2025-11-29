@@ -109,7 +109,7 @@ function BackgroundGrid() {
             </div>
           <h2 className="text-7xl font-bold mb-2 text-black">Join 15 million happyusers</h2>
           <p className="text-gray-600">
-            who grow their business with Odoo
+            who grow their business with Atelier
           </p>
         </div>
       </div>

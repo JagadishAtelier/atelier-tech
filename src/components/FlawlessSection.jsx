@@ -15,7 +15,7 @@ function FlawlessSection() {
           replenishments
         </span>
       </h1>
-      <p className='text-lg'><strong className='text-white'>Never run out-of-stock </strong> with smart replenishment strategies like min-max rules, MTO, or the master production schedule. Let Odoo propose, or trigger purchase orders automatically. Then automate vendor follow-ups to minimize communication risks : PO acknowledgment, receipt schedule confirmation a few days before, etc.</p>
+      <p className='text-lg'><strong className='text-white'>Never run out-of-stock </strong> with smart replenishment strategies like min-max rules, MTO, or the master production schedule. Let Atelier propose, or trigger purchase orders automatically. Then automate vendor follow-ups to minimize communication risks : PO acknowledgment, receipt schedule confirmation a few days before, etc.</p>
 
 
       <div className="flex justify-evenly items-center text-center py-4 rounded-md mt-5">

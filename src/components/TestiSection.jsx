@@ -10,7 +10,7 @@ const data = [
     name: "Jeremy B.",
     prof: "Mid-market Business Owner",
     comment:
-      "Odoo Inventory replaced our legacy spreadsheets which were unable to keep up with our growing business. The biggest benefits we realized were saving time by using a simpler system, and greater overall accessibility to our inventory.",
+      "Atelier Inventory replaced our legacy spreadsheets which were unable to keep up with our growing business. The biggest benefits we realized were saving time by using a simpler system, and greater overall accessibility to our inventory.",
   },
 ];
 
