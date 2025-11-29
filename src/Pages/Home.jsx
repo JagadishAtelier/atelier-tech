@@ -1,3 +1,4 @@
+import FeaturesSection from '@/components/FeaturesSection'
 import FlawlessSection from '@/components/FlawlessSection'
 import HeroDashboard from '@/components/HeroDashboard'
 import HeroSection from '@/components/HeroSection'
@@ -17,7 +18,7 @@ function Home() {
         <OptimizeSection/>
         <MovementsSections/>
         <PackingSection/>
-        <MovementsSections/>
+        <FeaturesSection/>
     </div>
   )
 }
