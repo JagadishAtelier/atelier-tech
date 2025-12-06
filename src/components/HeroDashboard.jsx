@@ -22,7 +22,7 @@ function HeroDashboard() {
                 />
 
                 <img
-                    src="https://odoocdn.com/openerp_website/static/src/img/apps/inventory/hero_image.webp"
+                    src="/dashboard.png"
                     className="shadow-md rounded-md"
                 />
 

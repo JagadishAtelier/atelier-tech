@@ -33,7 +33,7 @@ function OptimizeSection() {
 
                         {/* Image (centered on top of circle) */}
                         <img
-                            src="https://odoocdn.com/openerp_website/static/src/img/apps/inventory/optimize_warehouse.webp"
+                            src="/dashboard.png"
                             className="absolute w-[80vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md shadow"
                         />
                         <img
