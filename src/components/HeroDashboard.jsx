@@ -22,16 +22,16 @@ function HeroDashboard() {
                 />
 
                 <img
-                    src="/dashboard.png"
+                    src="/newDash.png"
                     className="shadow-md rounded-md"
                 />
 
                 {/* PLAY BUTTON */}
-                <img
+                {/* <img
                     src="https://odoocdn.com/openerp_website/static/src/img/icons/play.svg"
                     className="absolute top-70 left-1/2 -translate-x-1/2 -translate-y-1/2 h-20 bg-white p-3 rounded-full cursor-pointer zoom-animation"
                     onClick={() => setOpenModal(true)}
-                />
+                /> */}
 
                 {/* CONTENT BELOW */}
                 <div className="flex flex-col gap-4">

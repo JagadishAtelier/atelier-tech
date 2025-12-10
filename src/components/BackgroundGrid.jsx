@@ -101,7 +101,7 @@ function BackgroundGrid() {
       </div>
 
       {/* CARD OVERLAY */}
-      <div className="absolute top-1/4 left-1/5 flex justify-center items-center pointer-events-none">
+      <div className="absolute top-1/4 left-90 flex justify-center items-center pointer-events-none">
         <div className="bg-[#181b25] shadow-xl px-20 py-7 rounded-full text-center pointer-events-auto">
             <div className="flex justify-end items-start text-orange-300">
                 <img src="https://odoocdn.com/openerp_website/static/src/img/graphics/arrow_circular_down_left.svg"/>
