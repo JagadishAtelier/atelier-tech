@@ -61,10 +61,10 @@ function AppSections() {
                 {data.map((item, index) => (
                     <div
                         key={index}
-                        className='flex items-center gap-5 bg-[#F3F4F6] text-black p-5 rounded-2xl w-full max-w-[450px]'
+                        className='flex items-center gap-5 bg-[#181b25] text-white p-5 rounded-2xl w-full max-w-[450px]'
                     >
                         {/* IMAGE LEFT */}
-                        <div className='bg-white p-2 rounded'>
+                        <div className='bg-[#181b25] p-2 rounded'>
                             <img src={item.image} className='h-14 w-14' />
                         </div>
                         {/* CONTENT RIGHT */}

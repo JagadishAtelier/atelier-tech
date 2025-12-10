@@ -29,7 +29,7 @@ function OptimizeSection() {
                     <div className="relative w-full flex justify-center items-center">
 
                         {/* Circle */}
-                        <div className="bg-[#F3F4F6] h-[70vh] w-[70vh] rounded-full"></div>
+                        <div className="bg-[#181b25] h-[70vh] w-[70vh] rounded-full"></div>
 
                         {/* Image (centered on top of circle) */}
                         <img

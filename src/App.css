@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
- font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
-background-color: #232323;
+  font-family: "Inter Tight", sans-serif;
+background-color: #0e121b;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 23vw;
@@ -13,11 +13,14 @@ background-color: #232323;
     transition: background-color .3s, color .3s;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Caveat", cursive;
+  font-family:"Inter Tight", sans-serif;
+  background-image: linear-gradient(180deg, #fff,#99a0ae);
+  background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 
 a,p {
- font-family: "Inter", "Odoo Unicode Support Noto", sans-serif;
+ font-family: "Inter Tight", sans-serif;
 }
 
 
@@ -71,7 +74,7 @@ a,p {
     position: absolute;
     inset: 0%;
     overflow: hidden;
-    height: 120vh;
+    height: 130vh;
 
 }
 .hero-blob-center{
@@ -102,35 +105,88 @@ a,p {
     inset: 0%;
 }
 
-.hero-background-wrap::after {
+/* .hero-background-wrap::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;  /* control the fade size */
+    height: 200px;  
     background: linear-gradient(
         to bottom,
-        transparent 0%,   /* transparent */
-        transparent 30%,/* light blue */
-        #232323 100%          /* solid black */
+        transparent 0%,   
+        transparent 30%,
+        #232323 100%         
     );
     pointer-events: none;
     z-index: 10;
-}
+} */
 
 
 .hero-bakground-pattern {
-    max-width: 90rem;
+    /* max-width: 90rem; */
     mix-blend-mode: plus-lighter;
-    height: 100%;
+    /* height: 100%; */
     margin-left: auto;
     margin-right: auto;
     position: absolute;
     inset: auto 0% 0%;
+    top: -25%;
+    left: 0;
 }
 
 
 .test-swiper {
   overflow: visible !important;
+}
+
+
+.stack-section {
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-card {
+  position: absolute;
+  width: 280px;
+  height: 360px;
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  opacity: 0;
+  transform-origin: center;
+}
+
+/* STACK POSITIONS (UPDATED) */
+.stack-card:nth-child(1) {
+  transform: translateY(130px) rotate(-6deg) scale(0.85);
+  z-index: 1;
+}
+.stack-card:nth-child(2) {
+  transform: translateY(100px) rotate(-3deg) scale(0.9);
+  z-index: 2;
+}
+.stack-card:nth-child(3) {
+  transform: translateY(70px) rotate(-1deg) scale(0.94);
+  z-index: 3;
+}
+.stack-card:nth-child(4) {
+  transform: translateY(40px) rotate(0deg) scale(0.98);
+  z-index: 4;
+}
+
+.stack-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.stack-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
 }

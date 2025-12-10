@@ -6,11 +6,12 @@ import { Button } from './ui/button'
 function HeroSection() {
     return (
         <div className='flex flex-col gap-7 mt-7 relative'>
+            <img src='https://atelier-product.vercel.app/images/ns-img-dark-126.svg' className='hero-bakground-pattern w-[90%] h-100vh' />
             <div className='hero-background-wrap'>
-                <div className='hero-blob-center'></div>
+                {/* <div className='hero-blob-center'></div>
                 <div className='hero-blob-left'></div>
-                <div className='hero-blob-right'></div>
-                <img src='https://atelier-product.vercel.app/images/hero-background-shape.png' className='hero-bakground-pattern'/>
+                <div className='hero-blob-right'></div> */}
+
 
             </div>
             <h1 className='text-8xl font-bold text-white text-center'>Finally, a

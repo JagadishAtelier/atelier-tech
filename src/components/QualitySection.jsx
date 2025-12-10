@@ -6,7 +6,7 @@ function QualitySection() {
             <img src='https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_loop_01.svg' className='ms-auto h-50' />
 
             <div className='flex justify-between gap-10 items-start'>
-                <div className='w-[80%] bg-[#F3F4F6] h-[80vh] rounded-e-full flex justify-center items-center'>
+                <div className='w-[80%] bg-[#181b25] h-[80vh] rounded-e-full flex justify-center items-center'>
                     <img src='https://odoocdn.com/openerp_website/static/src/img/apps/inventory/device.png'
                         className='h-100 object-cover' />
                 </div>

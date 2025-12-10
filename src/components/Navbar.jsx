@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from './ui/button'
 function Navbar() {
     return (
-        <div className='flex items-center justify-between pe-4 mt-5
+        <div className='flex items-center justify-between pe-4
             backdrop-filter-none
     bg-[#ffffff4d]
     border border-[#0000001a]

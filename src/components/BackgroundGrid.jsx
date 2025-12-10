@@ -101,13 +101,13 @@ function BackgroundGrid() {
       </div>
 
       {/* CARD OVERLAY */}
-      <div className="absolute top-1/4 left-1/4 flex justify-center items-center pointer-events-none">
-        <div className="bg-white shadow-xl px-20 py-7 rounded-full text-center pointer-events-auto">
+      <div className="absolute top-1/4 left-1/5 flex justify-center items-center pointer-events-none">
+        <div className="bg-[#181b25] shadow-xl px-20 py-7 rounded-full text-center pointer-events-auto">
             <div className="flex justify-end items-start text-orange-300">
                 <img src="https://odoocdn.com/openerp_website/static/src/img/graphics/arrow_circular_down_left.svg"/>
-                <p>Happy</p>
+                <p>Explore</p>
             </div>
-          <h2 className="text-7xl font-bold mb-2 text-black">Join 15 million happyusers</h2>
+          <h2 className="text-7xl font-bold mb-2 !text-black">Join with a free trail</h2>
           <p className="text-gray-600">
             who grow their business with Atelier
           </p>

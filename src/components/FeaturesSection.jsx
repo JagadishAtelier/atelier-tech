@@ -63,7 +63,7 @@ function FeaturesSection() {
                     {dataLeft.map((item, i) => (
                         <div
                             key={i}
-                            className='bg-white/10 backdrop-blur-xl p-6 rounded-xl border border-white/20 relative'
+                            className='bg-[#181b25] backdrop-blur-xl p-6 rounded-xl  relative shadow'
                         >
                             <div className='absolute right-10 top-0 bg-white rounded-b-full flex justify-center items-center'>
                                 <img src='https://odoocdn.com/openerp_website/static/src/img/icons/heart.svg' className='h-15' />
@@ -87,7 +87,7 @@ function FeaturesSection() {
                     {dataRight.map((item, i) => (
                         <div
                             key={i}
-                            className='bg-white/10 backdrop-blur-xl p-6 rounded-xl border border-white/20 relative'
+                            className='bg-[#181b25] backdrop-blur-xl p-6 rounded-xl relative shadow-md'
                         >
                             <div className='absolute right-10 top-0 bg-white rounded-b-full flex justify-center items-center'>
                                 <img src='https://odoocdn.com/openerp_website/static/src/img/icons/heart.svg' className='h-15' />
