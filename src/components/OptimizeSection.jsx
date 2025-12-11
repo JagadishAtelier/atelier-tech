@@ -7,17 +7,7 @@ function OptimizeSection() {
 
             <div className='flex justify-between'>
                 <div className='w-1/2'>
-                    <h1 className='text-7xl font-bold text-white my-5'>
-                        <span className='mx-3' style={{
-                            backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/highlights/yellow_highlight_01.svg)`,
-                            backgroundPosition: "center bottom",
-                            backgroundRepeat: "no-repeat",
-                            backgroundSize: "contain",
-                            whiteSpace: "nowrap"
-                        }}>
-                            Optimize
-                        </span>
-                        your warehouse
+                    <h1 className='text-7xl font-bold text-white my-5'>Optimize your warehouse
                     </h1>
 
                     <p className='text-[1.2rem]'><strong className='text-white'>Real-time inventory management </strong> with all the features: serial numbers, lots, packaging, reservation strategies, cycle counting, KPIs, and more...</p>

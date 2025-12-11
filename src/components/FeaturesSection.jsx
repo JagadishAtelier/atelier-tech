@@ -35,24 +35,7 @@ function FeaturesSection() {
             />
 
             <h1 className='text-7xl font-bold text-white my-5'>
-                All the
-                <span className='mx-3' style={{
-                    backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/graphics/circle.svg)`,
-                    backgroundPosition: "center center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "contain",
-                }}>
-                    features
-                </span>
-                done
-                <span className='mx-3' style={{
-                    backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/graphics/underline.svg)`,
-                    backgroundPosition: "center bottom",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "contain",
-                }}>
-                    right
-                </span>
+                All the features done right
             </h1>
 
             {/* LEFT + RIGHT side layout */}
@@ -65,9 +48,9 @@ function FeaturesSection() {
                             key={i}
                             className='bg-[#181b25] backdrop-blur-xl p-6 rounded-xl  relative shadow'
                         >
-                            <div className='absolute right-10 top-0 bg-white rounded-b-full flex justify-center items-center'>
+                            {/* <div className='absolute right-10 top-0 bg-white rounded-b-full flex justify-center items-center'>
                                 <img src='https://odoocdn.com/openerp_website/static/src/img/icons/heart.svg' className='h-15' />
-                            </div>
+                            </div> */}
                             <p className='text-2xl font-bold text-white mb-2'>{item.head}</p>
                             <p className='text-gray-300 mb-3 text-[1.2rem]'>{item.content}</p>
 
@@ -89,9 +72,9 @@ function FeaturesSection() {
                             key={i}
                             className='bg-[#181b25] backdrop-blur-xl p-6 rounded-xl relative shadow-md'
                         >
-                            <div className='absolute right-10 top-0 bg-white rounded-b-full flex justify-center items-center'>
+                            {/* <div className='absolute right-10 top-0 bg-white rounded-b-full flex justify-center items-center'>
                                 <img src='https://odoocdn.com/openerp_website/static/src/img/icons/heart.svg' className='h-15' />
-                            </div>
+                            </div> */}
                             <p className='text-2xl font-bold text-white mb-4'>{item.head}</p>
                             <img
                                 src={item.image}

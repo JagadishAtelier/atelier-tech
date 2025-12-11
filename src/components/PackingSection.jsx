@@ -27,16 +27,7 @@ useEffect(() => {
             <div className='flex justify-between'>
                 <div className='w-1/2'>
                     <h1 className='text-7xl font-bold text-white my-5'>
-                        <span className='mx-3' style={{
-                            backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/highlights/red_highlight_bold_05.svg)`,
-                            backgroundPosition: "center center",
-                            backgroundRepeat: "no-repeat",
-                            backgroundSize: "contain",
-                            whiteSpace: "nowrap"
-                        }}>
-                            Packing
-                        </span>
-                        has never been easier
+                            Packing has never been easier
                     </h1>
                     <p className='text-[1.2rem]'>
                         Atelier integrates with carriers to print shipping labels, quality controls, and different packing units such as parts, boxes, pallets, and more.

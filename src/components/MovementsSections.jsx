@@ -24,16 +24,7 @@ function MovementsSections() {
 
             <div>
                 <h1 className='text-7xl text-center font-bold text-white my-5'>
-                    <span className='mx-3' style={{
-                        backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/highlights/green_highlight_bold_01.svg)`,
-                        backgroundPosition: "center center",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "contain",
-                        whiteSpace: "nowrap"
-                    }}>
-                        Minimize
-                    </span>
-                    picking movements
+                    Minimize picking movements
                 </h1>
                 <p className='text-center text-[1.2rem]'>Choose the right strategy for you: single, cluster, wave, or batch picking. Trigger goods to release using multiple reservation strategies. Implementing the rights strategies allows to pick and pack 30% extra products with the same team.</p>
 

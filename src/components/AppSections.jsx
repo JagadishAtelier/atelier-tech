@@ -38,30 +38,17 @@ function AppSections() {
             />
 
             <h1 className='text-7xl font-bold my-5'>
-                One
-                <span className='mx-3 bg-no-repeat bg-contain bg-bottom'
-                    style={{
-                        backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/graphics/underline.svg)`
-                    }}>
-                    need,
-                </span>
-                one
-                <span className='mx-3 bg-no-repeat bg-contain bg-bottom'
-                    style={{
-                        backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/graphics/underline.svg)`
-                    }}>
-                    app.
-                </span>
+                One need, one app.
             </h1>
 
             <p className='text-[1.2rem] mb-10'>Expand as you grow.</p>
 
             {/* GRID SECTION */}
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center'>
+            <div className='flex flex-wrap gap-5 justify-center items-center'>
                 {data.map((item, index) => (
                     <div
                         key={index}
-                        className='flex items-center gap-5 bg-[#181b25] text-white p-5 rounded-2xl w-full max-w-[450px]'
+                        className='flex items-center gap-5 bg-[#181b25] text-white p-5 rounded-2xl w-full max-w-[430px]'
                     >
                         {/* IMAGE LEFT */}
                         <div className='bg-[#181b25] p-2 rounded'>

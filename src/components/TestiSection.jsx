@@ -12,11 +12,19 @@ const data = [
     comment:
       "Atelier Inventory replaced our legacy spreadsheets which were unable to keep up with our growing business. The biggest benefits we realized were saving time by using a simpler system, and greater overall accessibility to our inventory.",
   },
+  {
+    image:
+      "https://odoocdn.com/openerp_website/static/src/img/snippets/s_wd_testimonials/avatar/jeremy_b.webp",
+    name: "Jeremy B.",
+    prof: "Mid-market Business Owner",
+    comment:
+      "Atelier Inventory replaced our legacy spreadsheets which were unable to keep up with our growing business. The biggest benefits we realized were saving time by using a simpler system, and greater overall accessibility to our inventory.",
+  },
 ];
 
 function TestiSection() {
   return (
-    <div className="mt-10 px-20">
+    <div className="mt-10 px-20 overflow-hidden">
 
       <img
         src="https://odoocdn.com/openerp_website/static/src/img/arrows/grey_arrow_loop_02.svg"
@@ -25,10 +33,18 @@ function TestiSection() {
 
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 3000 }}
-        loop={true}
+        spaceBetween={100}
         slidesPerView={1}
-        className="mt-10 test-swiper"
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 2500 }}
+        loop={true}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 1 },
+          1024: { slidesPerView: 1 },
+        }}
+        className="mt-10 test-swiper overflow-hidden w-full"
       >
         {data.map((item, index) => (
           <SwiperSlide key={index} className="overflow-visible">
