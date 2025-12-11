@@ -10,14 +10,13 @@ function NewNavbar() {
                         href="/"
                         id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
                         aria-current="page"
-                        className="logo-link w-inline-block w--current"
+                        className="logo-link w-inline-block w--current logo-new-div"
                     ><img
-                            src="https://atelier-product.vercel.app/images/orizon-logomark1.svg"
+                            src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
                             loading="lazy"
                             alt="Atelier"
-                            className="logo"
+                            className="logo-new"
                         />
-                        <div className="logo-text">Atelier</div>
                     </a>
                     <nav role="navigation" className="nav-menu w-nav-menu">
                         <div className="nav-links-list">

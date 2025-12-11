@@ -58,7 +58,7 @@ function NewFooter() {
                     <div className="footer-cell">
                         <div className="footer-about-layout Footer-html">
                             <a href="/" aria-current="page" className="logo-link w-inline-block w--current"><img
-                                src="../assets/ATS White lOGO PNG.png" loading="lazy" alt="" className="foot-log-img" />
+                                src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png" loading="lazy" alt="" className="foot-log-img" />
                             </a>
                             <div className="log-bottom-text" id="dynamicFooterText">
                                 At Atelier, we are dedicated to simplifying your professional
