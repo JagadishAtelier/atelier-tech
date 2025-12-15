@@ -76,13 +76,13 @@ function NewFooter() {
                                 <div className="footer-menu-list-header text-style-small">
                                     Product
                                 </div>
-                                <a href="/#features" className="footer-link w-inline-block">
+                                <a href="https://atelier-product.vercel.app/#features" className="footer-link w-inline-block">
                                     <div className="footer-link-text">Features</div>
-                                </a><a href="/#benefits" className="footer-link w-inline-block">
+                                </a><a href="https://atelier-product.vercel.app/#benefits" className="footer-link w-inline-block">
                                     <div className="footer-link-text">Benefits</div>
                                 </a><a href="/#pricing" className="footer-link w-inline-block">
                                     <div className="footer-link-text">Pricing</div>
-                                </a><a href="/#our-value" className="footer-link w-inline-block">
+                                </a><a href="https://atelier-product.vercel.app/#our-values" className="footer-link w-inline-block">
                                     <div className="footer-link-text">Our Value</div>
                                 </a><a href="https://www.gitbook.com/" target="_blank" className="footer-link w-inline-block !flex flex-row">
                                     <div className="footer-link-text">Docs</div>
