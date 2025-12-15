@@ -15,7 +15,7 @@ function HeroDashboard() {
         //     whiteSpace: "normal",
         //   }}
         >
-            <div className="mx-auto w-[70%] h-100 relative rounded-md shadow flex flex-col items-center gap-8">
+            <div className="mx-auto w-[85%] h-100 relative rounded-md shadow flex flex-col items-center gap-8">
                 <img
                     src="https://odoocdn.com/openerp_website/static/src/img/graphics/corner_1.svg"
                     className="absolute -top-0 left-15 h-30"
@@ -23,7 +23,7 @@ function HeroDashboard() {
 
                 <img
                     src="/LapDash.png"
-                    className="rounded-md rotate-5"
+                    className="rounded-[10px] object-top object-cover rotate-[5deg]"
                 />
 
                 {/* PLAY BUTTON */}
