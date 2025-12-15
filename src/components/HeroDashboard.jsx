@@ -6,7 +6,7 @@ function HeroDashboard() {
 
     return (
         <div
-            className="mt-30 h-[110vh] relative z-50"
+            className="mt-30 h-[110vh] relative z-50 -top-30"
         //   style={{
         //     backgroundImage: `url(https://odoocdn.com/html_editor/shape/illustration/doodle/01.svg?c4=%23ffffff)`,
         //     backgroundPosition: "top center",
@@ -18,12 +18,12 @@ function HeroDashboard() {
             <div className="mx-auto w-[70%] h-100 relative rounded-md shadow flex flex-col items-center gap-8">
                 <img
                     src="https://odoocdn.com/openerp_website/static/src/img/graphics/corner_1.svg"
-                    className="absolute -top-25 -left-20 h-30"
+                    className="absolute -top-0 left-15 h-30"
                 />
 
                 <img
-                    src="/newDash.png"
-                    className="shadow-md rounded-md"
+                    src="/LapDash.png"
+                    className="rounded-md rotate-5"
                 />
 
                 {/* PLAY BUTTON */}
