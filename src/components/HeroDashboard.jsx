@@ -6,7 +6,7 @@ function HeroDashboard() {
 
     return (
         <div
-            className="mt-30 h-[110vh] relative z-50 -top-30"
+            className="mt-30 lg:h-[110vh] relative z-50 -top-30"
         //   style={{
         //     backgroundImage: `url(https://odoocdn.com/html_editor/shape/illustration/doodle/01.svg?c4=%23ffffff)`,
         //     backgroundPosition: "top center",
@@ -18,7 +18,7 @@ function HeroDashboard() {
             <div className="mx-auto w-[85%] h-100 relative rounded-md shadow flex flex-col items-center gap-8">
                 <img
                     src="https://odoocdn.com/openerp_website/static/src/img/graphics/corner_1.svg"
-                    className="absolute -top-0 left-15 h-30"
+                    className="absolute -top-0 left-15 h-30 lg:block hidden"
                 />
 
                 <img
@@ -39,11 +39,11 @@ function HeroDashboard() {
                         src="https://odoocdn.com/openerp_website/static/src/img/icons/plus.svg"
                         className="h-10"
                     />
-                    <h3 className="text-5xl font-semibold text-center text-white">
+                    <h3 className="lg:text-5xl text-3xl md:text-5xl font-semibold text-center text-white">
                         Automate vendor reminders too!
                     </h3>
 
-                    <div className="bg-white p-5 rounded-md text-black shadow-md flex flex-col gap-4 items-start">
+                    <div className="bg-white lg:p-5 p-5 rounded-md text-black shadow-md flex flex-col gap-4 items-start">
                         <div className="flex gap-10">
                             <p className="text-base ">Confirmation date</p>
                             <p>11/11/2025 12:13</p>
