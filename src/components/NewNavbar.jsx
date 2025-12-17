@@ -1,76 +1,70 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function NewNavbar() {
-    return (
-        <div className="container-small navigation">
-            <div className="nav-wrap">
-                {/* <div className="nav-blur-layer"></div> */}
-                <div className="nav-layout grid-3-cols">
-                    <a
-                        href="https://atelier-product.vercel.app/"
-                        id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae10e-d51ae109"
-                        aria-current="page"
-                        className="logo-link w-inline-block w--current logo-new-div"
-                    ><img
-                            src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
-                            loading="lazy"
-                            alt="Atelier"
-                            className="logo-new"
-                        />
-                    </a>
-                    <nav role="navigation" className="nav-menu w-nav-menu">
-                        <div className="nav-links-list">
-                            <a href="https://atelier-product.vercel.app/#features" className="nav-link w-inline-block">
-                                <div className="nav-link-text">Features</div> </a
-                            ><a href="https://atelier-product.vercel.app/#products" className="nav-link w-inline-block">
-                                <div className="nav-link-text">Products</div>
-                            </a>
-                            <a href="https://atelier-product.vercel.app/#benefits" className="nav-link w-inline-block">
-                                <div className="nav-link-text">Benefits</div> </a
-                            ><a href="https://atelier-product.vercel.app/#testimonial" className="nav-link w-inline-block">
-                                <div className="nav-link-text">Testimonial</div> </a
-                            ><a href="https://atelier-product.vercel.app/#our-values" className="nav-link w-inline-block">
-                                <div className="nav-link-text">Our Value</div>
-                            </a>
-                        </div>
-                    </nav>
-                    <div
-                        id="w-node-ed1a30f1-6737-bc57-209a-0418d51ae124-d51ae109"
-                        className="nav-rights"
-                    >
-                        <div className="landscape-hide">
-                            <a
-                                data-wf--button-small--style="secondary"
-                                href="https://atelier-product.vercel.app/contact.html"
-                                className="button-main small w-variant-4f1ced44-5afc-4753-1771-3275f473f97b w-inline-block"
-                            >
-                                <div className="button-text-wrap">
-                                    <div className="button-text-initial">Start for free</div>
-                                    <div className="button-text-reveal">Start for free</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className="nav-menu-button w-nav-button">
-                            <div className="menu-button-icon">
-                                <div
-                                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae128"
-                                    className="menu-button-icon-line"
-                                ></div>
-                                <div
-                                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae129"
-                                    className="menu-button-icon-line"
-                                ></div>
-                                <div
-                                    data-w-id="ed1a30f1-6737-bc57-209a-0418d51ae12a"
-                                    className="menu-button-icon-line"
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="bg-[#00000033] backdrop-blur-md sticky top-0 z-50 px-4 py-3">
+      <div className="max-w-[910px] mx-auto flex items-center justify-between">
+        {/* Logo */}
+        <a href="https://atelier-product.vercel.app/" className="flex items-center">
+          <img
+            src="https://atelier-product.vercel.app/assets/ATS%20White%20lOGO%20PNG.png"
+            alt="Atelier"
+            className="h-14 md:h-20"
+          />
+        </a>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex gap-6 font-semibold text-white">
+          <a href="#features">Features</a>
+          <a href="#products">Products</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#our-values">Our Value</a>
         </div>
-    )
+
+        {/* Desktop Button */}
+        <div className="hidden md:flex">
+          <a
+            href="/contact.html"
+            className="bg-white text-black px-4 py-2 rounded-lg font-semibold"
+          >
+            Start for free
+          </a>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex flex-col justify-between h-5 w-6 focus:outline-none"
+          >
+            <span className="block h-[2px] w-full bg-white"></span>
+            <span className="block h-[2px] w-full bg-white"></span>
+            <span className="block h-[2px] w-full bg-white"></span>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden mt-2 bg-[#ffffff33] backdrop-blur-md rounded-lg p-4 flex flex-col gap-3 text-white font-semibold">
+          <a href="#features">Features</a>
+          <a href="#products">Products</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#our-values">Our Value</a>
+          <a
+            href="/contact.html"
+            className="bg-white text-black px-4 py-2 rounded-lg font-semibold mt-2 text-center"
+          >
+            Start for free
+          </a>
+        </div>
+      )}
+    </div>
+  );
 }
 
-export default NewNavbar
+export default NewNavbar;

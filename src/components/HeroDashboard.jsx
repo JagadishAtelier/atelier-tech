@@ -22,7 +22,7 @@ function HeroDashboard() {
                 />
 
                 <img
-                    src="/LapDash.png"
+                    src="/inventory/LapDash.png"
                     className="rounded-[10px] object-top object-cover rotate-[5deg]"
                 />
 

@@ -682,3 +682,100 @@ body,h1,h2,h3,h4,h5,h6{
 .x_wd_shape::after{
   background-color: #181b25;
 }
+/* ============================
+   TABLET RESPONSIVE (≤1024px)
+============================ */
+@media screen and (max-width: 1024px) {
+  .footerAboveContact-wrapper {
+    gap: 3rem;
+  }
+
+  .footerAboveContact-left,
+  .footerAboveContact-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footerAboveContact-points {
+    justify-content: center;
+  }
+
+  .footer-about-layout {
+    width: 100%;
+  }
+
+  .footer-menu-wrap {
+    gap: 3rem;
+  }
+}
+
+/* ============================
+   MOBILE RESPONSIVE (≤640px)
+============================ */
+@media screen and (max-width: 640px) {
+
+  /* CTA SECTION */
+  .footerAboveContact-heading {
+    font-size: 1.25rem;
+  }
+
+  .footerAboveContact-heading-text {
+    font-size: 0.95rem;
+  }
+
+  .footerAboveContact-form {
+    flex-direction: column;
+  }
+
+  .footerAboveContact-input,
+  .footerAboveContact-btn {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .footerAboveContact-right {
+    padding-top: 30px;
+  }
+
+  /* FOOTER GRID */
+  .footer-layout.grid-2-cols {
+    grid-row-gap: 2rem;
+  }
+
+  .footer-menu-wrap {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .footer-menu-list {
+    width: 100%;
+  }
+
+  .footer-link-text.Address {
+    width: 100%;
+  }
+
+  .footer-links-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* LOGO */
+  .foot-log-img {
+    height: 80px;
+  }
+
+  .foot-gov-img {
+    height: 55px;
+  }
+
+  /* TEXT */
+  .log-bottom-text {
+    font-size: 0.95rem;
+  }
+
+  .footer-legal-text {
+    font-size: 0.85rem;
+  }
+}

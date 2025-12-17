@@ -1,113 +1,135 @@
-import { ArrowLeft, ChevronDown, Facebook, GithubIcon, Instagram, LinkedinIcon, Menu } from 'lucide-react'
-import React from 'react'
-import { Button } from './ui/button'
+import { ChevronDown } from "lucide-react";
+import React from "react";
+import { Button } from "./ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+
 const heroSlides = [
-    {
-        title: "Finally, a modern inventory system",
-        desc1: "Optimize performance, automate tasks, and gain real-time insights with",
-        desc2: "Atelier Creation’s powerful software suite.",
-        primaryBtn: "Start now - It's free",
-        secondaryBtn: "Meet an advisor",
-        showButtons: true,
-        
-    },
-    {
-        title: "Manage smarter. Scale faster.",
-        desc1: "Powerful automation and real-time analytics",
-        desc2: "built for growing teams.",
-        showButtons: true,
-                primaryBtn: "Start now - It's free",
-        secondaryBtn: "Meet an advisor",
-    },
+  {
+    title: "Finally, a modern inventory system",
+    desc1:
+      "Optimize performance, automate tasks, and gain real-time insights with",
+    desc2: "Atelier Creation’s powerful software suite.",
+    primaryBtn: "Start now - It's free",
+    secondaryBtn: "Meet an advisor",
+    showButtons: true,
+  },
+  {
+    title: "Manage smarter. Scale faster.",
+    desc1: "Powerful automation and real-time analytics",
+    desc2: "built for growing teams.",
+    primaryBtn: "Start now - It's free",
+    secondaryBtn: "Meet an advisor",
+    showButtons: true,
+  },
 ];
 
-
 function HeroSection() {
-    return (
-        <div className='flex justify-left items-center relative ps-30 pe-20 h-[110vh]'>
+  return (
+    <section className="relative min-h-screen text-white overflow-hidden">
+      {/* Background Decoration */}
+      {/* DOT GRID BACKGROUND */}
+      <div className="hidden lg:block absolute inset-0 pointer-events-none">
+        <div
+          className="
+      absolute inset-0
+      bg-[radial-gradient(circle,_rgba(255,255,255,0.35)_1px,_transparent_1px)]
+      bg-[length:22px_22px]
+      opacity-40
+      animate-[drift_60s_linear_infinite]
+    "
+        />
 
-            {/* <span className='mx-3' style={{
-                    backgroundImage: `url(https://odoocdn.com/openerp_website/static/src/img/highlights/green_highlight_03.svg)`,
-                    backgroundPosition:"center bottom",
-                    backgroundRepeat : "no-repeat",
-                    backgroundSize: "contain",
-                    whiteSpace:"nowrap"
-                }}>
-                    modern
-                </span> */}
-            <img
-                src="https://atelier-product.vercel.app/images/ns-img-dark-126.svg"
-                className="
-    hidden lg:block
-    absolute
-    top-0
-    left-9
-    h-[100vh]
-    w-[90rem]
-    object-cover
-    pointer-events-none
-    animate-pulse
+        {/* Gradient fade */}
+        <div
+          className="
+    absolute inset-0
+    bg-gradient-to-b
+    from-transparent
+    via-transparent
+    to-[#0e121b]
   "
-            />
+        />
+      </div>
 
-            <div className="w-1/2">
-                <Swiper
-                    modules={[Autoplay]}
-                    slidesPerView={1}
-                    loop
-                    speed={800}
-                    autoplay={{
-                        delay: 3500,
-                        disableOnInteraction: false,
-                    }}
-                    className="w-full"
-                >
-                    {heroSlides.map((slide, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="flex flex-col gap-7">
-                                <h1 className="lg:text-7xl text-3xl md:text-5xl font-bold text-white text-start">
-                                    {slide.title}
-                                </h1>
+      <div
+        className="
+         mx-auto
+        flex flex-col-reverse lg:flex-row
+        items-center
+        gap-12
+        px-6 md:px-10 lg:px-20
+        py-20
+      "
+      >
+        {/* LEFT CONTENT */}
+        <div className="w-full lg:w-1/2 z-10">
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={1}
+            loop
+            speed={800}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+          >
+            {heroSlides.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col gap-6">
+                  <h1
+                    className="
+                    text-3xl md:text-5xl lg:text-7xl
+                    font-bold leading-tight
+                  "
+                  >
+                    {slide.title}
+                  </h1>
 
-                                <div className="px-4 lg:px-0 w-[80%]">
-                                    <p className="lg:text-lg text-start">{slide.desc1}</p>
-                                    <p className="lg:text-lg text-start">{slide.desc2}</p>
-                                </div>
+                  <div className="max-w-xl text-gray-300">
+                    <p className="text-base md:text-lg">{slide.desc1}</p>
+                    <p className="text-base md:text-lg">{slide.desc2}</p>
+                  </div>
 
-                                {slide.showButtons && (
-                                    <div className="flex lg:flex-row flex-col gap-5">
-                                        <Button className="lg:h-13 w-40 !bg-[#005bd4] text-white text-2xl font-semibold">
-                                            {slide.primaryBtn}
-                                        </Button>
+                  {slide.showButtons && (
+                    <div className="flex lg:flex-row sm:flex-col gap-5">
+                      <Button className="lg:h-13 w-40 !bg-[#005bd4] text-white text-2xl font-semibold">
+                        {slide.primaryBtn}
+                      </Button>
 
-                                        <Button className="lg:h-13 w-40 !bg-gray-100 !text-black text-2xl font-semibold">
-                                            {slide.secondaryBtn} <ChevronDown />
-                                        </Button>
-                                    </div>
-                                )}
+                      <Button className="lg:h-13 w-40 !bg-gray-100 !text-black text-2xl font-semibold">
+                        {slide.secondaryBtn} <ChevronDown />
+                      </Button>
+                    </div>
+                  )}
 
-                                <p className="lg:text-lg text-start">
-                                    Free, forever, with unlimited users.
-                                    <span className="text-[#005bd4]"> See why</span>
-                                </p>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
-
-            <div className='flex items-center justify-end relative z-10'>
-
-                <img
-                    src="/LapDash.png"
-                    className="rounded-[10px] object-cover h-[70vh] w-full"
-                />
-            </div>
+                  <p className="text-sm md:text-base text-gray-400">
+                    Free, forever, with unlimited users.
+                    <span className="text-[#005bd4] cursor-pointer">
+                      {" "}
+                      See why
+                    </span>
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-    )
+
+        {/* RIGHT IMAGE */}
+        <div className="w-full lg:w-1/2 flex justify-center relative z-10">
+          <img
+            src="/inventory/LapDash.png"
+            className="
+              w-full max-w-[720px]
+              h-auto
+              rounded-xl
+              shadow-2xl
+            "
+            alt="Dashboard Preview"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default HeroSection
+export default HeroSection;

@@ -150,3 +150,10 @@ a,p {
     .logo-new{
       height: 100%;
     }
+
+@media (max-width:768px) {
+  
+.test-swiper {
+  overflow: visible !important;
+}
+}

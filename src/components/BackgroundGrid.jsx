@@ -10,14 +10,13 @@ const images = [
 
 const totalCells = 60;
 
-// RANDOM SHAPES
 const shapes = [
   "square",
   "circle",
   "rounded-top-right",
   "diamond",
   "triangle",
-  "blob"
+  "blob",
 ];
 
 const bgColors = ["#ffffff", "#eceaff", "#f5f5f5", "#ffe9ff", "#dfe7ff"];
@@ -27,19 +26,20 @@ function BackgroundGrid() {
   const [randomShapes, setRandomShapes] = useState([]);
 
   useEffect(() => {
-    const shapeArray = Array.from({ length: totalCells }, () => {
-      return shapes[Math.floor(Math.random() * shapes.length)];
-    });
-    setRandomShapes(shapeArray);
+    setRandomShapes(
+      Array.from({ length: totalCells }, () =>
+        shapes[Math.floor(Math.random() * shapes.length)]
+      )
+    );
   }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setVisibleImages((prev) => {
-        const newState = { ...prev };
+        const next = { ...prev };
         const randomCell = Math.floor(Math.random() * totalCells);
-        newState[randomCell] = !newState[randomCell];
-        return newState;
+        next[randomCell] = !next[randomCell];
+        return next;
       });
     }, 800);
     return () => clearInterval(interval);
@@ -57,9 +57,9 @@ function BackgroundGrid() {
         return {
           width: "0",
           height: "0",
-          borderLeft: "40px solid transparent",
-          borderRight: "40px solid transparent",
-          borderBottom: "70px solid white",
+          borderLeft: "30px solid transparent",
+          borderRight: "30px solid transparent",
+          borderBottom: "55px solid white",
           background: "none",
         };
       case "blob":
@@ -70,10 +70,18 @@ function BackgroundGrid() {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-hidden">
 
-      {/* GRID BACKGROUND */}
-      <div className="grid grid-cols-12 gap-3 px-20 mt-15">
+      {/* GRID */}
+      <div
+        className="
+          grid
+          grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12
+          gap-2 sm:gap-3
+          px-4 sm:px-10 md:px-16 lg:px-20
+          mt-10 lg:mt-15
+        "
+      >
         {[...Array(totalCells)].map((_, index) => {
           const shape = randomShapes[index];
           const bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
@@ -82,7 +90,13 @@ function BackgroundGrid() {
           return (
             <div
               key={index}
-              className="w-20 h-20 flex items-center justify-center relative overflow-hidden"
+              className="
+                flex items-center justify-center relative overflow-hidden
+                w-12 h-12
+                sm:w-14 sm:h-14
+                md:w-16 md:h-16
+                lg:w-20 lg:h-20
+              "
               style={{
                 backgroundColor: isTriangle ? "transparent" : bgColor,
                 ...getShapeStyles(shape),
@@ -100,15 +114,43 @@ function BackgroundGrid() {
         })}
       </div>
 
-      {/* CARD OVERLAY */}
-      <div className="absolute top-1/4 left-90 flex justify-center items-center pointer-events-none">
-        <div className="bg-[#181b25] shadow-xl px-20 py-7 rounded-full text-center pointer-events-auto">
-            <div className="flex justify-end items-start text-orange-300">
-                <img src="https://odoocdn.com/openerp_website/static/src/img/graphics/arrow_circular_down_left.svg"/>
-                <p>Explore</p>
-            </div>
-          <h2 className="text-7xl font-bold mb-2 !text-black">Join with a free trail</h2>
-          <p className="text-gray-600">
+      {/* OVERLAY CARD */}
+      <div
+        className="
+          absolute
+          top-1/2 left-1/2
+          -translate-x-1/2 -translate-y-1/2
+          lg:top-1/4 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-1/4
+          flex sm:justify-between justify-center items-center
+        "
+      >
+        <div
+          className="
+            bg-[#181b25] shadow-xl
+            px-8 py-20
+            sm:px-12 sm:py-10
+            lg:px-20 lg:py-7
+            rounded-full text-center
+            max-w-[95vw]
+          "
+        >
+          <div className="flex justify-end items-start text-orange-300">
+            <img
+              src="https://odoocdn.com/openerp_website/static/src/img/graphics/arrow_circular_down_left.svg"
+              className="h-6"
+            />
+            <p className="ml-2">Explore</p>
+          </div>
+
+          <h2 className="
+            text-3xl sm:text-4xl md:text-5xl
+            lg:text-7xl
+            font-bold my-2 !text-black
+          ">
+            Join with a free trial
+          </h2>
+
+          <p className="text-gray-600 text-sm sm:text-base">
             who grow their business with Atelier
           </p>
         </div>
