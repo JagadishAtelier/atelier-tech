@@ -7,27 +7,27 @@ const dataLeft = [
       "Blazing fast as most operations are performed offline; zero latency scans! Supports barcode, QR Code and GS-1, and is even optimized for products without barcodes.",
   },
   {
-    head: "Fast barcode scanner",
+    head: "End-to-End Inventory Flow",
     content:
-      "Blazing fast as most operations are performed offline; zero latency scans! Supports barcode, QR Code and GS-1, and is even optimized for products without barcodes.",
+      "Manage inventory movements between warehouses, pre-production, manufacturing, subcontracting, and deliveries with complete visibility and control at every stage.",
     image:
       "https://odoocdn.com/openerp_website/static/src/img/apps/inventory/smarts_routes.webp",
   },
   {
-    head: "Fast barcode scanner",
+    head: "Smart Stock Reservation",
     content:
-      "Blazing fast as most operations are performed offline; zero latency scans! Supports barcode, QR Code and GS-1, and is even optimized for products without barcodes.",
+      "Reserve inventory automatically for sales orders and planned deliveries. Maintain clear visibility between available, reserved, and incoming stock to avoid overbooking and ensure on-time fulfillment.",
   },
 ];
 
 const dataRight = [
   {
-    head: "Clear reservation mechanism",
+    head: "Inventory Management, Done Smarter",
     image:
       "https://odoocdn.com/openerp_website/static/src/img/apps/inventory/reservation_mechanism.webp",
   },
   {
-    head: "Clear reservation mechanism",
+    head: "Everything You Need to Control Your Inventory",
     image:
       "https://odoocdn.com/openerp_website/static/src/img/apps/inventory/reservation_mechanism.webp",
   },
@@ -93,7 +93,7 @@ function FeaturesSection() {
       </div>
 
       {/* CTA */}
-      <div className="flex gap-3 items-center mt-10 justify-center">
+      {/* <div className="flex gap-3 items-center mt-10 justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
           See all features
         </h1>
@@ -101,7 +101,7 @@ function FeaturesSection() {
           src="https://odoocdn.com/openerp_website/static/src/img/arrows/secondary_arrow_sm_03.svg"
           className="h-4 md:h-5"
         />
-      </div>
+      </div> */}
     </section>
   );
 }

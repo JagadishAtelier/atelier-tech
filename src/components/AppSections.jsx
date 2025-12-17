@@ -81,7 +81,7 @@ function AppSections() {
       </div>
 
       {/* CTA */}
-      <div className="flex gap-3 items-center mt-8 justify-center">
+      {/* <div className="flex gap-3 items-center mt-8 justify-center">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
           See all features
         </h1>
@@ -89,7 +89,7 @@ function AppSections() {
           src="https://odoocdn.com/openerp_website/static/src/img/arrows/secondary_arrow_sm_03.svg"
           className="h-4 md:h-5"
         />
-      </div>
+      </div> */}
 
     </div>
   )

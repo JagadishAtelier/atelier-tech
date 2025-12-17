@@ -9,15 +9,15 @@ const data = [
   },
   {
     image: "https://odoocdn.com/openerp_website/static/src/img/apps/inventory/wave-picking.svg",
-    head: "Wave picking",
+    head: "Intelligent Inventory Flow ",
     content:
-      "Launch picking orders per aisle, or area, and regroup at packing zone. Ideal for large warehouses.",
+      "Automate inventory picking, grouping, and packing through wave-based processing. Gain better control, improved efficiency, and real-time visibility across your inventory lifecycle.",
   },
   {
     image: "https://odoocdn.com/openerp_website/static/src/img/apps/inventory/wave-picking.svg",
-    head: "Wave picking",
+    head: "Wave Inventory Control",
     content:
-      "Launch picking orders per aisle, or area, and regroup at packing zone. Ideal for large warehouses.",
+      "Streamline stock picking and consolidate items efficiently before packing. Built for speed, accuracy, and scalable inventory operations.",
   },
 ];
 
