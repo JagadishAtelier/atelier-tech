@@ -92,7 +92,7 @@ function HeroSection() {
                   </div>
 
                   {slide.showButtons && (
-                    <div className="flex lg:flex-row sm:flex-col gap-5">
+                    <div className="flex lg:flex-row flex-col gap-5">
                       <Button className="lg:h-13 w-40 !bg-[#005bd4] text-white text-2xl font-semibold">
                         {slide.primaryBtn}
                       </Button>
