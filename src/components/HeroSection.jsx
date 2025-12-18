@@ -27,7 +27,7 @@ const heroSlides = [
 
 function HeroSection() {
   return (
-    <section className="relative min-h-screen text-white overflow-hidden">
+    <section className="relative min-h-screen text-white overflow-hidden pt-20">
       {/* Background Decoration */}
       {/* DOT GRID BACKGROUND */}
       <div className="hidden lg:block absolute inset-0 pointer-events-none">
