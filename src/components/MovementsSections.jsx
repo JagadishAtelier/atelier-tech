@@ -35,14 +35,14 @@ function MovementsSections() {
         {/* Heading */}
         <h1 className="
           text-3xl md:text-5xl lg:text-7xl
-          text-center font-bold text-white my-5
+          lg:text-center text-left font-bold text-white my-5
         ">
           Minimize picking movements
         </h1>
 
         {/* Description */}
         <p className="
-          text-center
+          lg:text-center text-left
           text-base md:text-lg lg:text-[1.2rem]
           max-w-5xl mx-auto
         ">
@@ -54,7 +54,7 @@ function MovementsSections() {
 
         {/* Cards */}
         <div className="
-          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+          grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3
           gap-8 lg:gap-10
           mt-10 lg:mt-14
         ">
@@ -66,14 +66,14 @@ function MovementsSections() {
                 src={item.image}
                 className="
                   mx-auto
-                  w-40 h-40 md:w-56 md:h-56 lg:w-100 lg:h-100
+                  w-full h-auto md:w-full lg:w-100 lg:h-100
                   shadow rounded-md
                 "
                 alt={item.head}
               />
 
               {/* Text */}
-              <div className="p-4 text-center lg:text-left">
+              <div className="p-4 text-left lg:text-left">
                 <p className="text-xl lg:text-2xl font-semibold text-white mb-3">
                   {item.head}
                 </p>

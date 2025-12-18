@@ -40,7 +40,7 @@ function OptimizeSection() {
             <div className="
               bg-[#181b25]
               h-[45vh] w-[45vh]
-              md:h-[55vh] md:w-[55vh]
+              md:h-[75vh] md:w-[75vh]
               lg:h-[70vh] lg:w-[70vh]
               rounded-full
             " />
@@ -50,8 +50,11 @@ function OptimizeSection() {
               src="/inventory/Report.png"
               className="
                 absolute
-                w-[60vw]
-                md:w-[65vh]
+                w-full
+                h-[30vh]
+                lg:h-[50vh]
+                md:h-[50vh]
+                md:w-[100%]
                 lg:w-[80vh]
                 top-1/2 left-1/2
                 -translate-x-1/2 -translate-y-1/2

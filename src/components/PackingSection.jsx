@@ -55,7 +55,7 @@ function PackingSection() {
         {/* TRUCK */}
         <div className="
           relative
-          h-[35vh] md:h-[45vh] lg:h-[50vh]
+          h-[25vh] md:h-[45vh] lg:h-[50vh]
           w-full
           overflow-x-hidden
         ">

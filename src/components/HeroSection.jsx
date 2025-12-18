@@ -27,7 +27,7 @@ const heroSlides = [
 
 function HeroSection() {
   return (
-    <section className="relative min-h-screen text-white overflow-hidden pt-20">
+    <section className="relative lg:min-h-screen text-white overflow-hidden lg:pt-20">
       {/* Background Decoration */}
       {/* DOT GRID BACKGROUND */}
       <div className="hidden lg:block absolute inset-0 pointer-events-none">
@@ -56,11 +56,11 @@ function HeroSection() {
       <div
         className="
          mx-auto
-        flex flex-col-reverse lg:flex-row
+        flex flex-col lg:flex-row
         items-center
         gap-12
         px-6 md:px-10 lg:px-20
-        py-20
+        lg:pt-20 pt-20 lg:pb-20 pb-0
       "
       >
         {/* LEFT CONTENT */}
@@ -77,7 +77,7 @@ function HeroSection() {
                 <div className="flex flex-col gap-6">
                   <h1
                     className="
-                    text-3xl md:text-5xl lg:text-7xl
+                    text-4xl md:text-5xl lg:text-7xl
                     font-bold leading-tight
                   "
                   >

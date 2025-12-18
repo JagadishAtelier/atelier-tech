@@ -41,7 +41,7 @@ function FeaturesSection() {
         className="mx-auto h-20 lg:h-30"
       />
 
-      <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white my-5 text-center lg:text-left">
+      <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white my-5 text-left lg:text-left">
         All the features done right
       </h1>
 

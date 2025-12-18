@@ -91,11 +91,12 @@ function BackgroundGrid() {
             <div
               key={index}
               className="
-                flex items-center justify-center relative overflow-hidden
+                lg:flex md:flex  items-center justify-center relative overflow-hidden hidden
                 w-12 h-12
                 sm:w-14 sm:h-14
                 md:w-16 md:h-16
                 lg:w-20 lg:h-20
+                
               "
               style={{
                 backgroundColor: isTriangle ? "transparent" : bgColor,
@@ -117,7 +118,7 @@ function BackgroundGrid() {
       {/* OVERLAY CARD */}
       <div
         className="
-          absolute
+          lg:absolute md:absolute relative
           top-1/2 left-1/2
           -translate-x-1/2 -translate-y-1/2
           lg:top-1/4 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-1/4
@@ -130,8 +131,11 @@ function BackgroundGrid() {
             px-8 py-20
             sm:px-12 sm:py-10
             lg:px-20 lg:py-7
-            rounded-full text-center
-            max-w-[95vw]
+            lg:rounded-full text-center
+            md:rounded-full 
+            lg:max-w-[95vw]
+            md:w-[80vw]
+            w-full
           "
         >
           <div className="flex justify-end items-start text-orange-300">

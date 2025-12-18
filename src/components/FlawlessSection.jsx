@@ -12,7 +12,7 @@ function FlawlessSection() {
       />
 
       {/* Heading */}
-      <h1 className="lg:text-7xl md:text-5xl text-3xl font-bold text-white my-5 text-center lg:text-left">
+      <h1 className="lg:text-7xl md:text-5xl text-3xl font-bold text-white my-5 text-left lg:text-left">
         Flawless replenishments
       </h1>
 
@@ -29,7 +29,7 @@ function FlawlessSection() {
       {/* Flow Section */}
       <div className="
         flex
-        lg:flex-row md:flex-row flex-col
+        lg:flex-row md:flex-row flex-row
         justify-evenly
         items-center
         text-center
@@ -39,13 +39,13 @@ function FlawlessSection() {
       ">
 
         {/* ITEM 1 */}
-        <div className="flex flex-col items-center h-40 md:h-44 lg:h-48 justify-end">
+        <div className="flex flex-col items-center h-20 md:h-44 lg:h-48 lg:justify-end">
           <img
             src="https://odoocdn.com/openerp_website/static/src/img/icons/blue_truck.svg"
-            className="lg:h-40 lg:w-40 md:h-24 h-20"
+            className="lg:h-40 lg:w-40 md:h-24 h-15"
             alt=""
           />
-          <h5 className="lg:text-4xl md:text-3xl text-2xl mt-2 text-white font-semibold">
+          <h5 className="lg:text-4xl md:text-3xl text-lg mt-2 text-white font-semibold">
             Replenishment
           </h5>
         </div>
@@ -58,13 +58,13 @@ function FlawlessSection() {
         />
 
         {/* ITEM 2 */}
-        <div className="flex flex-col items-center h-40 md:h-44 lg:h-48 justify-end">
+        <div className="flex flex-col items-center h-20 md:h-44 lg:h-48 lg:justify-end">
           <img
             src="https://odoocdn.com/openerp_website/static/src/img/icons/yellow_shield_2.svg"
-            className="lg:h-32 lg:w-32 md:h-24 h-20"
+            className="lg:h-32 lg:w-32 md:h-24 h-15"
             alt=""
           />
-          <h5 className="lg:text-4xl md:text-3xl text-2xl mt-2 text-white font-semibold">
+          <h5 className="lg:text-4xl md:text-3xl text-lg mt-2 text-white font-semibold">
             Quality control
           </h5>
         </div>
@@ -77,13 +77,13 @@ function FlawlessSection() {
         />
 
         {/* ITEM 3 */}
-        <div className="flex flex-col items-center h-40 md:h-44 lg:h-48 justify-end">
+        <div className="flex flex-col items-center h-20 md:h-44 lg:h-48 lg:justify-end">
           <img
             src="https://odoocdn.com/openerp_website/static/src/img/icons/hand-truch.svg"
-            className="lg:h-32 lg:w-32 md:h-24 h-20"
+            className="lg:h-32 lg:w-32 md:h-24 h-15"
             alt=""
           />
-          <h5 className="lg:text-4xl md:text-3xl text-2xl mt-2 text-white font-semibold">
+          <h5 className="lg:text-4xl md:text-3xl text-lg mt-2 text-white font-semibold">
             Storage
           </h5>
         </div>

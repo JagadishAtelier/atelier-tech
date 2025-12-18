@@ -39,11 +39,11 @@ function AppSections() {
       />
 
       {/* Heading */}
-      <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold my-5 text-center lg:text-left">
+      <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold my-5 text-left lg:text-left">
         One need, one app.
       </h1>
 
-      <p className="text-base md:text-lg lg:text-[1.2rem] mb-10 text-center lg:text-left">
+      <p className="text-base md:text-lg lg:text-[1.2rem] mb-10 text-left lg:text-left">
         Expand as you grow.
       </p>
 
@@ -56,7 +56,7 @@ function AppSections() {
               flex items-center gap-5
               bg-[#181b25] text-white
               p-5 rounded-2xl
-              w-full max-w-[430px]
+              w-full lg:max-w-[430px]
             "
           >
             {/* IMAGE */}

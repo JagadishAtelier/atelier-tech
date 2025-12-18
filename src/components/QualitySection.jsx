@@ -23,7 +23,8 @@ function QualitySection() {
           bg-[#181b25]
           h-[50vh] md:h-[60vh] lg:h-[80vh]
           rounded-3xl lg:rounded-e-full
-          flex justify-center items-center
+          lg:flex justify-center items-center
+           hidden
         ">
           <img
             src="https://odoocdn.com/openerp_website/static/src/img/apps/inventory/device.png"
@@ -35,7 +36,7 @@ function QualitySection() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="w-full lg:w-auto text-center lg:text-left">
+        <div className="w-full lg:w-auto text-left lg:text-left">
 
           <h1 className="
             text-3xl md:text-5xl lg:text-7xl
