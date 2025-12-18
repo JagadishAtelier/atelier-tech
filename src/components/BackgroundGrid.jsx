@@ -119,8 +119,6 @@ function BackgroundGrid() {
       <div
         className="
           lg:absolute md:absolute relative
-          top-1/2 left-1/2
-          -translate-x-1/2 -translate-y-1/2
           lg:top-1/4 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-1/4
           flex sm:justify-between justify-center items-center
         "
