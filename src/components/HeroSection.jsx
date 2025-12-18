@@ -68,9 +68,11 @@ function HeroSection() {
           <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
+          spaceBetween={50}
             loop
             speed={800}
             autoplay={{ delay: 3500, disableOnInteraction: false }}
+            className="testimonial-swiper"
           >
             {heroSlides.map((slide, index) => (
               <SwiperSlide key={index}>
